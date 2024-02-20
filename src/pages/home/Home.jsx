@@ -35,7 +35,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className='mt-[3rem] flex items-start justify-between w-[65%] mx-auto'>
+        <div className='mt-[3rem] flex items-start justify-between w-[90%] mx-auto'>
             <div className='w-[500px]'>
                 <p className='text-[#2998FF] mb-2'>TOKENIZATION WITH STOBOX</p>
                 <p className='text-[#20242e] text-[32px]'>
