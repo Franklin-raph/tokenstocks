@@ -20,6 +20,12 @@ export default {
 
       "3xl": "1920px",
       // => @media (min-width: 1920px) { ... }
+
+      476: "476px",
+      // => @media (min-width: 476px) { ... }
+
+      997: "997px",
+      // => @media (min-width: 476px) { ... }
     },
     extend: {
       colors: {
@@ -47,6 +53,8 @@ export default {
           "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/product2bg.webp)",
         product3bg:
           "linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/product3bg.webp)",
+        cta1bg:
+          "linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/cta1img.webp)",
       },
     },
   },
