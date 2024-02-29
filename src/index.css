@@ -8,7 +8,7 @@ body {
 }
 
 .primary-btn-1 {
-  @apply transition-all duration-500 hover:bg-primary-100 hover:text-white px-6 py-4 
+  @apply transition-all duration-500 hover:bg-primary-100 hover:text-white px-6 py-3 
               rounded-lg text-primary-100 shadow-[0px_0px_0px_1.5px] shadow-primary-100 hover:shadow-none text-sm font-semibold tracking-wide;
 }
 

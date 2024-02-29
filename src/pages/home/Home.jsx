@@ -260,7 +260,7 @@ const Home = () => {
               className="w-[80%] h-[280px] ml-auto -mr-10"
             />
             <div className="flex flex-col gap-2 mt-5">
-              <img src="/productlogo1.svg" className="w-[60px]" alt="" />
+              <img src="/productlogo1.svg" className="w-[40px]" alt="" />
               <h3 className="text-[24px] text-white">DS Dashboard</h3>
               <p className="text-white/40 text-[14px] tracking-wide">
                 Primary solution for issuing, managing, and transfer of security
@@ -270,7 +270,7 @@ const Home = () => {
                 to="/"
                 className="primary-btn-1 self-start !text-white !shadow-white"
               >
-                Learn More
+                Learn More.
               </Link>
             </div>
           </div>
@@ -282,7 +282,7 @@ const Home = () => {
               className="w-[80%] h-[280px] ml-auto -mr-10"
             />
             <div className="flex flex-col gap-2 mt-5">
-              <img src="/productlogo2.svg" className="w-[60px]" alt="" />
+              <img src="/productlogo2.svg" className="w-[40px]" alt="" />
               <h3 className="text-[24px] text-white">Soulbound ID</h3>
               <p className="text-white/40 text-[14px] tracking-wide">
                 Blockchain-based identities for legally compliant security
@@ -304,7 +304,7 @@ const Home = () => {
               className="w-[80%] h-[280px] ml-auto -mr-10"
             />
             <div className="flex flex-col gap-2 mt-5">
-              <img src="/productlogo3.svg" className="w-[60px]" alt="" />
+              <img src="/productlogo3.svg" className="w-[40px]" alt="" />
               <h3 className="text-[24px] text-white">DS Swap</h3>
               <p className="text-white/40 text-[14px] tracking-wide">
                 Decentralized secondary market for security tokens. Unique DeFi
