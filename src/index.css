@@ -17,5 +17,5 @@ body {
 }
 
 .stobox-product-cards {
-  @apply overflow-hidden w-full sm:w-[430px] md:w-full h-auto bg-no-repeat bg-cover bg-center mx-auto py-8 px-6 rounded-2xl;
+  @apply overflow-hidden w-full sm:w-[430px] md:w-full h-auto bg-no-repeat bg-cover bg-center mx-auto py-8 px-6 rounded-3xl;
 }
