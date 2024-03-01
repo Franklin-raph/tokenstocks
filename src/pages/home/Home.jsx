@@ -65,14 +65,6 @@ const Home = () => {
         scrollTrigger: { trigger: [el4, el5, el6] },
       }
     );
-    const best_cards = document.querySelectorAll(".best-stories-card");
-    best_cards.forEach((card) => {
-      gsap.fromTo(
-        card,
-        { opacity: 0, scale: 0.9 },
-        { opacity: 1, scale: 1, scrollTrigger: { trigger: card }, stagger: 0.5 }
-      );
-    });
 
     gsap.fromTo(
       ".best-stories-card",
