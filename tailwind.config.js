@@ -25,7 +25,10 @@ export default {
       // => @media (min-width: 476px) { ... }
 
       997: "997px",
-      // => @media (min-width: 476px) { ... }
+      // => @media (min-width: 997px) { ... }
+
+      887: "887px",
+      // => @media (min-width: 887px) { ... }
     },
     extend: {
       colors: {

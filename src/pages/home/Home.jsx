@@ -260,7 +260,7 @@ const Home = () => {
               className="w-[80%] h-[280px] ml-auto -mr-10"
             />
             <div className="flex flex-col gap-2 mt-5">
-              <img src="/productlogo1.svg" className="w-[40px]" alt="" />
+              <img src="/productlogo1.svg" className="w-[60px]" alt="" />
               <h3 className="text-[24px] text-white">DS Dashboard</h3>
               <p className="text-white/40 text-[14px] tracking-wide">
                 Primary solution for issuing, managing, and transfer of security
@@ -270,7 +270,7 @@ const Home = () => {
                 to="/"
                 className="primary-btn-1 self-start !text-white !shadow-white"
               >
-                Learn More.
+                Learn More
               </Link>
             </div>
           </div>
@@ -282,7 +282,7 @@ const Home = () => {
               className="w-[80%] h-[280px] ml-auto -mr-10"
             />
             <div className="flex flex-col gap-2 mt-5">
-              <img src="/productlogo2.svg" className="w-[40px]" alt="" />
+              <img src="/productlogo2.svg" className="w-[60px]" alt="" />
               <h3 className="text-[24px] text-white">Soulbound ID</h3>
               <p className="text-white/40 text-[14px] tracking-wide">
                 Blockchain-based identities for legally compliant security
@@ -304,7 +304,7 @@ const Home = () => {
               className="w-[80%] h-[280px] ml-auto -mr-10"
             />
             <div className="flex flex-col gap-2 mt-5">
-              <img src="/productlogo3.svg" className="w-[40px]" alt="" />
+              <img src="/productlogo3.svg" className="w-[60px]" alt="" />
               <h3 className="text-[24px] text-white">DS Swap</h3>
               <p className="text-white/40 text-[14px] tracking-wide">
                 Decentralized secondary market for security tokens. Unique DeFi
@@ -563,7 +563,7 @@ const Home = () => {
 
       {/* best stories section */}
       <div className="w-[90%] md:w-[88%] mx-auto mb-[100px]">
-        <div className="w-full md:w-[90%] mx-auto flex flex-col gap-1">
+        <div className="w-full md:w-[90%] mx-auto flex flex-col gap-1 mb-8">
           <h4 className="uppercase text-primary-100 font-semibold text-[14px] md:text-base tracking-wider">
             Best Stories
           </h4>
@@ -576,9 +576,205 @@ const Home = () => {
             tokenization of real-world assets through security tokens.
           </p>
         </div>
+        {/*  */}
+        <div className="w-full md:w-[90%] mx-auto grid grid-cols-1 887:grid-cols-2 gap-6 items-stretch">
+          <div className="flex flex-col gap-6">
+            {/* card one */}
+            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+              <img
+                className="w-[140px]"
+                src="/best-stories-img1.webp"
+                alt="card one img"
+              />
+              <h2 className="text-lg font-semibold text-dark-100">
+                Tokenization classics — offering US real estate to global
+                audience
+              </h2>
+              <p className="text-[14px] font-[400] text-dark-200 mb-6">
+                Landshare is a striking example of the clearest asset
+                tokenization use case. We tokenize residential apartments in the
+                US and offering them both domestically to accredited investors
+                and globally to non-accredited (with some limitations). Such a
+                model allows us to sell properties at a higher price due to the
+                liquidity premium and higher demand.
+              </p>
+              <p className="flex items-center gap-1 text-[12px] font-semibold">
+                <span className="text-primary-100">Jordan Friske |</span>
+                <span className="text-dark-200">Founder of Landshare</span>
+              </p>
+            </div>
+            {/* card two */}
+            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+              <img
+                className="w-[120px]"
+                src="/best-stories-img2.webp"
+                alt="card one img"
+              />
+              <h2 className="text-lg font-semibold text-dark-100">
+                Avora Capital is tokenizing its real estate
+              </h2>
+              <p className="text-[14px] font-[400] text-dark-200 mb-6">
+                Avora Capital has built a massive business for managing
+                properties in the UK and is now testing tokenization as a new
+                tool for reaching investors. The first test case is tokenizing a
+                residential unit using a Liechtenstein-based company, reaching
+                out to European professional investors.
+              </p>
+              <p className="flex items-center gap-1 text-[12px] font-semibold">
+                <span className="text-primary-100">Gareth Street |</span>
+                <span className="text-dark-200">Founder & COO</span>
+              </p>
+            </div>
+            {/* card three */}
+            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+              <img
+                className="w-[125px]"
+                src="/best-stories-img3.webp"
+                alt="card one img"
+              />
+              <h2 className="text-lg font-semibold text-dark-100">
+                Global institutional offering by the US hardware startup
+              </h2>
+              <p className="text-[14px] font-[400] text-dark-200 mb-6">
+                Powershift Properties is a global network of spaces for purpose
+                agents to live, work and connect. Tokenization with Stobox has
+                been a no-brainer for us, as it opens access to our
+                international investor network and makes the offering more
+                attractive.
+              </p>
+              <p className="flex items-center gap-1 text-[12px] font-semibold">
+                <span className="text-primary-100">Thomas Thomison |</span>
+                <span className="text-dark-200">
+                  Founding Member, PowerShift Properties, DAO LLC
+                </span>
+              </p>
+            </div>
+            {/*  */}
+          </div>
+          {/*  */}
+          <div className="flex flex-col gap-6">
+            {/* card four */}
+            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+              <img
+                className="w-[140px]"
+                src="/best-stories-img4.png"
+                alt="card one img"
+              />
+              <h2 className="text-lg font-semibold text-dark-100">
+                Global institutional offering by the US hardware startup
+              </h2>
+              <p className="text-[14px] font-[400] text-dark-200 mb-6">
+                While many of similar projects aim for global markets, we had a
+                purely domestic focus to leverage a strong local brand. This
+                allowed us to sell a tokenized villas in Tulum, mostly focusing
+                on the local crypto community and high net worth individuals.
+              </p>
+              <p className="flex items-center gap-1 text-[12px] font-semibold">
+                <span className="text-primary-100">Cameron Williamson |</span>
+                <span className="text-dark-200">President of Sales</span>
+              </p>
+            </div>
+            {/* card five */}
+            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+              <img
+                className="w-[140px]"
+                src="/best-stories-img5.webp"
+                alt="card one img"
+              />
+              <h2 className="text-lg font-semibold text-dark-100">
+                GL Capital: Democratizing real estate investments
+              </h2>
+              <p className="text-[14px] font-[400] text-dark-200 mb-6">
+                In addition to an expanded investor circle, many entrepreneurs
+                are attracted by the promise of increased liquidity. Our
+                offering attracted a significant amount of capital even before
+                the launch, demonstrating that investors are highly interested
+                in the benefits blockchain can deliver.
+              </p>
+              <p className="flex items-center gap-1 text-[12px] font-semibold">
+                <span className="text-primary-100">Andrew Hinman |</span>
+                <span className="text-dark-200">Managing Partner</span>
+              </p>
+            </div>
+            {/* card six */}
+            <div className="relative overflow-hidden flex flex-col justify-center bg-dark-100 rounded-xl px-8 py-5 min-h-[300px]">
+              <div className="relative z-40 w-[310px] flex flex-col gap-3">
+                <p className="text-[32px] font-[300] leading-9 text-white">
+                  Your business case{" "}
+                  <span className="font-semibold">can be next</span>
+                </p>
+                <Link
+                  className="flex justify-center items-center w-[140px] text-[14px] font-semibold bg-primary-100 text-white py-5 px-6 rounded-lg"
+                  to="/"
+                >
+                  Book a call
+                </Link>
+              </div>
+              <img
+                className="absolute -bottom-4 -right-4"
+                src="/best-stories-img7.png"
+                alt="card one img"
+              />
+              <img
+                className="absolute top-1/2 -translate-y-1/2 -right-[150px]"
+                src="/best-stories-img6.webp"
+                alt="card one img"
+              />
+            </div>
+            {/*  */}
+          </div>
+        </div>
       </div>
 
       {/* Building trust partners section */}
+      <div className="mb-10">
+        <div className="w-full md:w-[96%] mx-auto flex flex-col gap-1 mb-8 text-center">
+          <h4 className="uppercase text-primary-100 font-semibold text-[14px] md:text-base tracking-wider">
+            Best Stories
+          </h4>
+          <h2 className="w-full sm:w-[500px] md:w-[600px] mx-auto text-dark-100 text-[18px] md:text-[24px] lg:text-[36px] font-medium">
+            Stobox&nbsp;
+            <span className="font-bold">partners</span>
+          </h2>
+          <p className="w-full sm:w-[96%] md:w-[90%] mx-auto text-dark-200 text-[14px] sm:text-base">
+            Stobox has a strong network of partners worldwide, including law
+            firms, marketing agencies, and niche service providers.
+          </p>
+        </div>
+        {/*  */}
+        <div className="w-[90%] md:w-[80%] mx-auto flex flex-col gap-6">
+          <div className="flex justify-between items-center gap-6 flex-wrap">
+            <img src="/trust-img1.webp" alt="trust img 1" />
+            <img src="/trust-img2.webp" alt="trust img 2" />
+            <img src="/trust-img3.webp" alt="trust img 3" />
+            <img src="/trust-img4.webp" alt="trust img 4" />
+            <img src="/trust-img5.webp" alt="trust img 5" />
+            <img src="/trust-img6.webp" alt="trust img 6" />
+          </div>
+          <div className="flex justify-between items-center gap-6 flex-wrap">
+            <img src="/trust-img7.webp" alt="trust img 7" />
+            <img src="/trust-img8.webp" alt="trust img 8" />
+            <img src="/trust-img9.webp" alt="trust img 9" />
+            <img src="/trust-img10.webp" alt="trust img 10" />
+            <img src="/trust-img11.webp" alt="trust img 11" />
+            <img src="/trust-img12.webp" alt="trust img 12" />
+            <img src="/trust-img13.webp" alt="trust img 13" />
+            <img src="/trust-img14.webp" alt="trust img 14" />
+          </div>
+          <div className="flex justify-between items-center gap-6 flex-wrap">
+            <img src="/trust-img15.webp" alt="trust img 15" />
+            <img src="/trust-img16.webp" alt="trust img 16" />
+            <img src="/trust-img17.webp" alt="trust img 17" />
+            <img src="/trust-img18.webp" alt="trust img 18" />
+            <img src="/trust-img19.webp" alt="trust img 19" />
+            <img src="/trust-img20.webp" alt="trust img 20" />
+            <img src="/trust-img21.webp" alt="trust img 21" />
+          </div>
+        </div>
+      </div>
+
+      {/* cta two section */}
+      <div></div>
 
       {/* end of home page... */}
     </div>
