@@ -10,8 +10,8 @@ import img3 from "../../assets/images/img3.webp";
 // import img9 from "../../assets/images/img5.svg";
 // import img10 from "../../assets/images/img6.svg";
 import { Link } from "react-router-dom";
-import { ChevronDown } from "../../icons/chevron";
 import { MotionDiv, MotionPresence } from "../../utils/motion-exports";
+import { ChevronDown } from "../../icons/chevron";
 
 const Home = () => {
   const [accordion, setAccordion] = useState({

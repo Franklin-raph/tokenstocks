@@ -9,7 +9,7 @@ function App() {
     <>
       <HashRouter>
         <Navbar />
-        <div className="bg-transparent py-[2.4rem]"></div>
+        <div className="hidden 887:block bg-transparent py-[2.4rem]"></div>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

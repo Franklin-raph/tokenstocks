@@ -38,6 +38,7 @@ export default {
         dark: {
           100: "#20242e",
           200: "#979fa8",
+          300: "rgba(1, 16, 35)",
         },
         light: {
           100: "#f8f9fa",
@@ -53,6 +54,7 @@ export default {
         dark: {
           100: "#20242e",
           200: "#979fa8",
+          300: "rgba(1, 16, 35)",
         },
         light: {
           100: "#f8f9fa",
@@ -72,6 +74,8 @@ export default {
           "linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/cta1img.webp)",
         footerBg:
           "linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(/footer-bg1.webp)",
+        mobileNavBg:
+          "linear-gradient(to right, rgba(1, 16, 35, .9), rgba(1, 16, 35, .9)),url(/mobile-nav-bg.webp)",
       },
     },
   },
