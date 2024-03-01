@@ -727,7 +727,7 @@ const Home = () => {
       </div>
 
       {/* Building trust partners section */}
-      <div className="mb-10">
+      <div className="mb-[10rem]">
         <div className="w-full md:w-[96%] mx-auto flex flex-col gap-1 mb-8 text-center">
           <h4 className="uppercase text-primary-100 font-semibold text-[14px] md:text-base tracking-wider">
             Best Stories
@@ -773,8 +773,70 @@ const Home = () => {
         </div>
       </div>
 
-      {/* cta two section */}
-      <div></div>
+      {/* Community section */}
+      <div>
+        <div className="mt-[3rem] mb-[10rem] flex items-start justify-between w-[80%] mx-auto">
+          <div className="w-[500px]">
+            <h4 className="uppercase text-primary-100 font-semibold text-[14px] md:text-base tracking-wider">community</h4>
+            <p className="text-[#20242e] text-[32px] w-[90%]">
+              <span className="font-bold leading-9">Stay connected with </span> us on social media and leading industry platforms
+            </p>
+            <p className="text-[#979fa8] my-3">
+              Open invitations exist for media collaborations aimed at enhancing awareness around tokenization and real-world assets.
+            </p>
+          </div>
+          <div className="w-[400px] flex flex-col gap-8">
+            <Link className="flex items-start gap-3">
+              <i class="ri-telegram-fill text-[#20242e] text-[23px]"></i>
+              <div>
+                <div className="flex items-center gap-2">
+                  <p className="text-[#20242e]">Telegram Chat</p>
+                  <i class="ri-arrow-right-up-line hover:text-primary-100"></i>
+                </div>
+                <p className="text-[#979fa8] text-[14px]">
+                  Ask general questions and chat with the worldwide community on Telegram.
+                </p>
+              </div>
+            </Link>
+            <Link className="flex items-start gap-3">
+              <i class="ri-twitter-fill text-[#20242e] text-[23px]"></i>
+              <div>
+                <div className="flex items-center gap-2">
+                  <p className="text-[#20242e]">Twitter</p>
+                  <i class="ri-arrow-right-up-line hover:text-primary-100"></i>
+                </div>
+                <p className="text-[#979fa8] text-[14px]">
+                  Follow our Twitter account for the latest news and updates across  the ecosystem.
+                </p>
+              </div>
+            </Link>
+            <Link className="flex items-start gap-3">
+              <i class="ri-youtube-fill text-[#20242e] text-[23px]"></i>
+              <div>
+                <div className="flex items-center gap-2">
+                  <p className="text-[#20242e]">Youtube</p>
+                  <i class="ri-arrow-right-up-line hover:text-primary-100"></i>
+                </div>
+                <p className="text-[#979fa8] text-[14px]">
+                  Explore the topic of tokenization on the biggest YouTube channel  in its field.
+                </p>
+              </div>
+            </Link>
+            <Link className="flex items-start gap-3">
+              <i class="ri-linkedin-fill text-[#20242e] text-[23px]"></i>
+              <div>
+                <div className="flex items-center gap-2">
+                  <p className="text-[#20242e]">Linkedin</p>
+                  <i class="ri-arrow-right-up-line hover:text-primary-100"></i>
+                </div>
+                <p className="text-[#979fa8] text-[14px]">
+                  Interact with the RWA community and participate in internal incentive campaigns.
+                </p>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
 
       {/* end of home page... */}
     </div>
