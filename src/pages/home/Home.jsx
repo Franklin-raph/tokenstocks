@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import img1 from "../../assets/images/img1.webp";
 import img2 from "../../assets/images/img2.webp";
 import img3 from "../../assets/images/img3.webp";
@@ -12,6 +14,7 @@ import img3 from "../../assets/images/img3.webp";
 import { Link } from "react-router-dom";
 import { MotionDiv, MotionPresence } from "../../utils/motion-exports";
 import { ChevronDown } from "../../icons/chevron";
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const [accordion, setAccordion] = useState({
@@ -22,6 +25,65 @@ const Home = () => {
     five: false,
     six: false,
   });
+  //
+  const card1 = useRef(null);
+  const card2 = useRef(null);
+  const card3 = useRef(null);
+  const card4 = useRef(null);
+  const card5 = useRef(null);
+  const card6 = useRef(null);
+  //
+  useEffect(() => {
+    const el1 = card1.current;
+    const el2 = card2.current;
+    const el3 = card3.current;
+    const el4 = card4.current;
+    const el5 = card5.current;
+    const el6 = card6.current;
+
+    //
+    gsap.fromTo(
+      [el1, el2, el3],
+      { opacity: 0, x: -50, duration: 5, stagger: 0.5 },
+      {
+        opacity: 1,
+        x: 0,
+        stagger: 0.5,
+        scrollTrigger: { trigger: [el1, el2, el3] },
+      }
+    );
+
+    //
+    gsap.fromTo(
+      [el4, el5, el6],
+      { opacity: 0, x: -50, scale: 0.95, duration: 5, stagger: 0.5 },
+      {
+        opacity: 1,
+        x: 0,
+        scale: 1,
+        stagger: 0.5,
+        scrollTrigger: { trigger: [el4, el5, el6] },
+      }
+    );
+    const best_cards = document.querySelectorAll(".best-stories-card");
+    best_cards.forEach((card) => {
+      gsap.fromTo(
+        card,
+        { opacity: 0, scale: 0.9 },
+        { opacity: 1, scale: 1, scrollTrigger: { trigger: card }, stagger: 0.5 }
+      );
+    });
+
+    gsap.fromTo(
+      ".best-stories-card",
+      { opacity: 0, scale: 0.9 },
+      {
+        opacity: 1,
+        scale: 1,
+        scrollTrigger: { trigger: ".best-stories-card" },
+      }
+    );
+  }, []);
   //
   return (
     <div>
@@ -152,7 +214,7 @@ const Home = () => {
         </div>
         {/*  */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 min-[1040px]:grid-cols-3 justify-items-center items-stretch gap-5">
-          <div className="end-to-end-token-cards">
+          <div className="end-to-end-token-cards" ref={card1}>
             <div className="flex flex-col gap-1">
               <h4 className="text-[18px] md:text-[24px] font-semibold">
                 Tokenization / STOP Consulting
@@ -177,7 +239,7 @@ const Home = () => {
             />
           </div>
           {/*  */}
-          <div className="end-to-end-token-cards">
+          <div className="end-to-end-token-cards" ref={card2}>
             <div className="flex flex-col gap-1">
               <h4 className="text-[18px] md:text-[24px] font-semibold">
                 Legal Management
@@ -203,7 +265,7 @@ const Home = () => {
             />
           </div>
           {/*  */}
-          <div className="end-to-end-token-cards">
+          <div className="end-to-end-token-cards" ref={card3}>
             <div className="flex flex-col gap-1">
               <h4 className="text-[18px] md:text-[24px] font-semibold">
                 Digital assets consulting
@@ -253,12 +315,13 @@ const Home = () => {
         </div>
         {/* stobox product cards */}
         <div className="w-[95%] md:w-[88%] mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 min-[1040px]:grid-cols-3 justify-items-center items-stretch gap-5">
-          <div className="stobox-product-cards bg-product1bg">
+          <div className="stobox-product-cards bg-product1bg" ref={card4}>
             <img
               src="/product1img.webp"
               alt=""
               className="w-[80%] h-[280px] ml-auto -mr-10"
             />
+
             <div className="flex flex-col gap-2 mt-5">
               <img src="/productlogo1.svg" className="w-[60px]" alt="" />
               <h3 className="text-[24px] text-white">DS Dashboard</h3>
@@ -275,7 +338,7 @@ const Home = () => {
             </div>
           </div>
           {/*  */}
-          <div className="stobox-product-cards bg-product2bg">
+          <div className="stobox-product-cards bg-product2bg" ref={card5}>
             <img
               src="/product2img.webp"
               alt=""
@@ -297,7 +360,7 @@ const Home = () => {
             </div>
           </div>
           {/*  */}
-          <div className="stobox-product-cards bg-product3bg">
+          <div className="stobox-product-cards bg-product3bg" ref={card6}>
             <img
               src="/product3img.webp"
               alt=""
@@ -580,7 +643,7 @@ const Home = () => {
         <div className="w-full md:w-[90%] mx-auto grid grid-cols-1 887:grid-cols-2 gap-6 items-stretch">
           <div className="flex flex-col gap-6">
             {/* card one */}
-            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+            <div className="best-stories-card flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
               <img
                 className="w-[140px]"
                 src="/best-stories-img1.webp"
@@ -604,7 +667,7 @@ const Home = () => {
               </p>
             </div>
             {/* card two */}
-            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+            <div className="best-stories-card flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
               <img
                 className="w-[120px]"
                 src="/best-stories-img2.webp"
@@ -626,7 +689,7 @@ const Home = () => {
               </p>
             </div>
             {/* card three */}
-            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+            <div className="best-stories-card flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
               <img
                 className="w-[125px]"
                 src="/best-stories-img3.webp"
@@ -654,7 +717,7 @@ const Home = () => {
           {/*  */}
           <div className="flex flex-col gap-6">
             {/* card four */}
-            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+            <div className="best-stories-card flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
               <img
                 className="w-[140px]"
                 src="/best-stories-img4.png"
@@ -675,7 +738,7 @@ const Home = () => {
               </p>
             </div>
             {/* card five */}
-            <div className="flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
+            <div className="best-stories-card flex flex-col gap-3 border shadow-md rounded-xl px-8 py-5 min-h-[300px] justify-center">
               <img
                 className="w-[140px]"
                 src="/best-stories-img5.webp"
@@ -697,7 +760,7 @@ const Home = () => {
               </p>
             </div>
             {/* card six */}
-            <div className="relative overflow-hidden flex flex-col justify-center bg-dark-100 rounded-xl px-8 py-5 min-h-[300px]">
+            <div className="best-stories-card relative overflow-hidden flex flex-col justify-center bg-dark-100 rounded-xl px-8 py-5 min-h-[300px]">
               <div className="relative z-40 w-[310px] flex flex-col gap-3">
                 <p className="text-[32px] font-[300] leading-9 text-white">
                   Your business case{" "}
