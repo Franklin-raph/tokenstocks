@@ -4,23 +4,63 @@ import { BarsIcon } from "../../icons/bars";
 import { CloseIcon } from "../../icons/close";
 import { MotionDiv, MotionPresence } from "../../utils/motion-exports";
 import { ChevronDown } from "../../icons/chevron";
+import { NavDrop1 } from "../minor/nav-drop1";
+import { NavDrop2 } from "../minor/nav-drop2";
+import { NavDrop3 } from "../minor/nav-drop3";
 
 const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+
+  //
+  const [showDrop, setShowDrop] = useState<any>({
+    one: false,
+    two: false,
+    three: false,
+  });
 
   //
   return (
     <div className="flex items-center justify-between px-[3.5rem] py-[1.2rem] bg-[#011023] text-white fixed w-full z-[999]">
       <Link to="/">Logo</Link>
       <ul className="hidden 887:flex items-center justify-between gap-[3.5rem]">
-        <li>
-          <Link to="/services">Services</Link>
+        <li
+          className="relative"
+          onMouseEnter={() => setShowDrop({ one: true })}
+          onMouseLeave={() => setShowDrop({ one: false })}
+        >
+          {/* <Link to="/services">Services</Link> */}
+          <div className="flex items-center gap-2 cursor-pointer py-2">
+            <p>Services</p>
+            <ChevronDown className="size-5 stroke-light-100" />
+          </div>
+          {/*  */}
+          {showDrop.one && <NavDrop1 />}
         </li>
-        <li>
-          <Link to="/solutions">Solutions</Link>
+        <li
+          className="relative"
+          onMouseEnter={() => setShowDrop({ two: true })}
+          onMouseLeave={() => setShowDrop({ two: false })}
+        >
+          {/* <Link to="/solutions">Solutions</Link> */}
+          <div className="flex items-center gap-2 cursor-pointer py-2">
+            <p>Solutions</p>
+            <ChevronDown className="size-5 stroke-light-100" />
+          </div>
+          {/*  */}
+          {showDrop.two && <NavDrop2 />}
         </li>
-        <li>
-          <Link to="/about">Company</Link>
+        <li
+          className="relative"
+          onMouseEnter={() => setShowDrop({ three: true })}
+          onMouseLeave={() => setShowDrop({ three: false })}
+        >
+          {/* <Link to="/about">Company</Link> */}
+          <div className="flex items-center gap-2 cursor-pointer py-2">
+            <p>Company</p>
+            <ChevronDown className="size-5 stroke-light-100" />
+          </div>
+          {/*  */}
+          {showDrop.three && <NavDrop3 />}
         </li>
         <li>
           <Link to="/about">Blog</Link>
@@ -286,7 +326,7 @@ export const MobileNav = ({
                 to="/"
               >
                 <img className="w-[22px]" src="/productlogo1.svg" alt="" />
-                <p>Sttobox Security Token [STBX]</p>
+                <p>Stobox Security Token [STBX]</p>
               </Link>
             </MotionDiv>
           )}
