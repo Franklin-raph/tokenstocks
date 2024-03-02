@@ -55,8 +55,20 @@ const Home = () => {
 
     //
     gsap.fromTo(
+      ".step-token-card",
+      { opacity: 0, x: 90, duration: 5, stagger: 0.5 },
+      {
+        opacity: 1,
+        x: 0,
+        stagger: 0.5,
+        scrollTrigger: { trigger: ".step-token-card" },
+      }
+    );
+
+    //
+    gsap.fromTo(
       [el4, el5, el6],
-      { opacity: 0, x: -50, scale: 0.95, duration: 5, stagger: 0.5 },
+      { opacity: 0, x: 70, scale: 0.95, duration: 5, stagger: 0.5 },
       {
         opacity: 1,
         x: 0,
@@ -288,6 +300,85 @@ const Home = () => {
           src="/end-to-end-gradient.png"
           alt="gradient color for the card"
         />
+      </div>
+      {/* Step By Step Step Tokenization */}
+      <div className="my-[121px]">
+        <div className="flex flex-col gap-1 px-12">
+          <h3 className="text-lg text-primary-100">STEP BY STEP</h3>
+          <h1 className="text-[28px] md:text-[36px] lg:text-[50px] tracking-tight text-dark-100">
+            Steps to your <span className="font-bold">tokenization</span>
+          </h1>
+          <p className="text-base md:text-lg tracking-wider text-dark-200">
+            Unlocking Real World Assets through Security Token Offering (STO)
+            for your business.
+          </p>
+        </div>
+        {/*  */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-center items-start gap-8 px-16 mt-4">
+          <div className="step-token-card">
+            <h1 className="font-black text-[38px] md:text-[45px] lg:text-[55px] text-primary-100/20">
+              01
+            </h1>
+            <h3 className="font-bold text-[24px] text-dark-100">
+              Securitization
+            </h3>
+            <p className="text-base md:text-lg tracking-wide text-dark-200">
+              Tokenization starts with asset transfer to an SPV (Special Purpose
+              Vehicle), be it valuable resources (oil, gas, gold) or tangible
+              assets (mine, plantation).
+            </p>
+          </div>
+          {/*  */}
+          <div className="step-token-card">
+            <h1 className="font-black text-[38px] md:text-[45px] lg:text-[55px] text-primary-100/20">
+              02
+            </h1>
+            <h3 className="font-bold text-[24px] text-dark-100">
+              Tokenization
+            </h3>
+            <p className="text-base md:text-lg tracking-wide text-dark-200">
+              In tokenization, corporate securities shift to blockchain tokens,
+              blending traditional assets with the dynamic blockchain realm.
+            </p>
+          </div>
+          {/*  */}
+          <div className="step-token-card">
+            <h1 className="font-black text-[38px] md:text-[45px] lg:text-[55px] text-primary-100/20">
+              03
+            </h1>
+            <h3 className="font-bold text-[24px] text-dark-100">Offering</h3>
+            <p className="text-base md:text-lg tracking-wide text-dark-200">
+              STO marks an exciting tokenization stage where securities become
+              digital tokens for investor sale. Stobox DS Dashboard facilitates
+              this phase.
+            </p>
+          </div>
+          {/*  */}
+          <div className="step-token-card">
+            <h1 className="font-black text-[38px] md:text-[45px] lg:text-[55px] text-primary-100/20">
+              04
+            </h1>
+            <h3 className="font-bold text-[24px] text-dark-100">Marketing</h3>
+            <p className="text-base md:text-lg tracking-wide text-dark-200">
+              In the last phase, marketing shines, linking tokenized assets
+              globally. Community and networks hold immense power in this
+              digital age.
+            </p>
+          </div>
+          {/*  */}
+          <div className="step-token-card">
+            <h1 className="font-black text-[38px] md:text-[45px] lg:text-[55px] text-primary-100/20">
+              05
+            </h1>
+            <h3 className="font-bold text-[24px] text-dark-100">
+              Secondary trading via DS Swap or alternatives
+            </h3>
+            <p className="text-base md:text-lg tracking-wide text-dark-200">
+              Utilize DS Swap, P2P, or exchange listing for seamless security
+              token trading.
+            </p>
+          </div>
+        </div>
       </div>
       {/*  */}
       {/* Storebox technologies and products section */}
